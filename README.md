@@ -6,7 +6,7 @@ This project analyzes airline operations to improve efficiency and customer sati
 
 ---
 
-## 📂 Datasets Used
+##   Datasets Used
 1. **Flight Information** – `FlightID`, `FlightNumber`, `Airline`, `Destination`, `Status`
 2. **Passenger Information** – `PassengerID`, `FlightID`, `SeatNumber`
 3. **Ticket Information** – `TicketID`, `FlightID`, `BookingStatus`
@@ -61,26 +61,26 @@ To analyze and visualize airline data for operational insights, passenger manage
 
 ### **5. Visuals Created **
 
-Passenger count by airline.
-Ticket booking statuses (booked, cancelled, etc.).
-Flights by airline and destination.
-Interactive Features:
-Slicers for Destination and Airline.
-Airline-specific pages with navigation buttons.
-Cards for quick views.
+1.Passenger count by airline.
+2.Ticket booking statuses (booked, cancelled, etc.).
+3.Flights by airline and destination.
+4.Interactive Features:
+5.Slicers for Destination and Airline.
+6.Airline-specific pages with navigation buttons.
+7.Cards for quick views.
 
 ### **6. Final Dashboard & Power BI Service **
 
 Actions Performed:
-Designed a final dashboard summarizing KPIs and visuals.
-Configured Row-Level Security (RLS) for Airline A.
-Scheduled data refresh at 5 PM daily in Power BI Service.
-Published the dashboard online.
+1.Designed a final dashboard summarizing KPIs and visuals.
+2.Configured Row-Level Security (RLS) for Airline A.
+3.Scheduled data refresh at 5 PM daily in Power BI Service.
+4.Published the dashboard online.
 
 📊 Tools & Technologies
 
-Power BI Desktop
-Power Query
-DAX
-Power BI Service
+1.Power BI Desktop
+2.Power Query
+3.DAX
+4.Power BI Service
   
