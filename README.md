@@ -1,0 +1,60 @@
+# ✈ Airline Data Management & Analysis using Power BI
+
+## 📌 Problem Statement
+The airline industry operates with numerous complexities, requiring effective data management and insights into flight schedules, passenger details, and ticketing systems.  
+This project analyzes airline operations to improve efficiency and customer satisfaction.
+
+---
+
+## 📂 Datasets Used
+1. **Flight Information** – `FlightID`, `FlightNumber`, `Airline`, `Destination`, `Status`
+2. **Passenger Information** – `PassengerID`, `FlightID`, `SeatNumber`
+3. **Ticket Information** – `TicketID`, `FlightID`, `BookingStatus`
+
+---
+
+## 🎯 Objective
+To analyze and visualize airline data for operational insights, passenger management, and ticket booking trends using **Power BI**.
+
+---
+
+## 🛠 Tasks & Deliverables
+
+### **1. Data Preparation and Cleaning**
+- Imported all datasets into Power BI using Power Query.
+- Removed duplicates, handled missing values, standardized column formats.
+- Changed data types where necessary.
+
+---
+
+### **2. Data Modeling **
+- Established relationships based on **FlightID**:
+  - Flight Information ↔ Passenger Information
+  - Flight Information ↔ Ticket Information
+- Set **One-to-Many** cardinality and ensured referential integrity.
+
+---
+
+### **3. Enhanced Data Insights **
+- Created **Flight Quality** column:
+  - `"Best"` if Status = `"On Time"`, else `"To Be Improved"`.
+- Extracted numeric part of Flight Number using **Column from Examples**.
+
+---
+
+### **4. Calculations Using DAX **
+- Key DAX Measures:
+  ```DAX
+  Cancelled Bookings =
+  CALCULATE(COUNT(ticket_information[TicketID]),
+            ticket_information[BookingStatus] = "Cancelled")
+
+  Cancellation Rate = DIVIDE([Cancelled Bookings], [Total Tickets Booked])
+
+  Total Destination = DISTINCTCOUNT(flight_information[Destination])
+  Total Flights = COUNT(flight_information[FlightID])
+  Total Operational Airlines = DISTINCTCOUNT(flight_information[Airline])
+
+  
+  Total Passengers = COUNT(passenger_information[FlightID])
+  Total Tickets Booked = COUNT(ticket_information[TicketID])
