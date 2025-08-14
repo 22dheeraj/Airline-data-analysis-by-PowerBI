@@ -54,13 +54,10 @@ To analyze and visualize airline data for operational insights, passenger manage
   Total Destination = DISTINCTCOUNT(flight_information[Destination])
   Total Flights = COUNT(flight_information[FlightID])
   Total Operational Airlines = DISTINCTCOUNT(flight_information[Airline])
+  Total Tickets Booked = COUNT(ticket_information[TicketID])
 
   
   Total Passengers = COUNT(passenger_information[FlightID])
-
-
-
-  5. Visualization & Interactivity (20 Marks)
 
 ### **5. Visuals Created **
 
@@ -81,8 +78,9 @@ Scheduled data refresh at 5 PM daily in Power BI Service.
 Published the dashboard online.
 
 📊 Tools & Technologies
+
 Power BI Desktop
 Power Query
 DAX
 Power BI Service
-  Total Tickets Booked = COUNT(ticket_information[TicketID])
+  
