@@ -59,28 +59,34 @@ To analyze and visualize airline data for operational insights, passenger manage
   
   Total Passengers = COUNT(passenger_information[FlightID])
 
-### **5. Visuals Created **
+### **5. Visualization & Interactivity (20 Marks)**
 
-1.Passenger count by airline.
-2.Ticket booking statuses (booked, cancelled, etc.).
-3.Flights by airline and destination.
-4.Interactive Features:
-5.Slicers for Destination and Airline.
-6.Airline-specific pages with navigation buttons.
-7.Cards for quick views.
+**Visuals Created:**
+1. Passenger count by airline.
+2. Ticket booking statuses (booked, cancelled, etc.).
+3. Flights by airline and destination.
 
-### **6. Final Dashboard & Power BI Service **
+**Interactive Features:**
+4. Slicers for Destination and Airline.
+5. Airline-specific pages with navigation buttons.
+6. Cards for quick views.
 
-Actions Performed:
-1.Designed a final dashboard summarizing KPIs and visuals.
-2.Configured Row-Level Security (RLS) for Airline A.
-3.Scheduled data refresh at 5 PM daily in Power BI Service.
-4.Published the dashboard online.
+---
 
-📊 Tools & Technologies
+### **6. Final Dashboard & Power BI Service (20 Marks)**
 
-1.Power BI Desktop
-2.Power Query
-3.DAX
-4.Power BI Service
+**Actions Performed:**
+1. Designed a final dashboard summarizing KPIs and visuals.
+2. Configured Row-Level Security (RLS) for Airline A.
+3. Scheduled data refresh at **5 PM daily** in Power BI Service.
+4. Published the dashboard online.
+
+---
+
+## 📊 Tools & Technologies
+1. Power BI Desktop  
+2. Power Query  
+3. DAX  
+4. Power BI Service
+
   
